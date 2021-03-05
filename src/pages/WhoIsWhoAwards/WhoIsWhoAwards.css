@@ -1,0 +1,188 @@
+.WhoIsWhoAwardsSection {
+    background-image: url('../../assets/images/logos/Logo-08.png');
+	background-size: 30%;
+	background-repeat: no-repeat;
+    background-position: 45% 0%;
+    background-color: rgba(135, 31, 120);
+    height: 100vh;
+	width: 100%;
+}
+
+.WhoIsWhoAwardsContainer {
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+    padding: 50px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+.WhoIsWhoAwardsLandingPage h1 {
+	font-size: 30px;
+	font-family: Rubik-medium;
+	font-weight: lighter;
+	letter-spacing: 0px;
+	color: #000;
+	line-height: 95%;
+}
+
+.WhoIsWhoAwardsLandingPage h4 {
+	font-family: Rubik-medium;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	line-height: 0px;
+	color: #000;
+}
+
+.WhoIsWhoAwards-text-background {
+    display: table-row;
+	position: absolute;
+	background-color: #fff;
+    padding-top: 14vh;
+	padding-left: 20vh;
+	padding-right: 20vh;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+}
+
+.WhoIsWhoAwards-left-side{
+	width: 300px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.WhoIsWhoAwards-right-side{
+	padding: 10px;
+	display: table-cell;
+	padding-right: 50px;
+}
+
+.WhoIsWhoAwardsSectionSample {
+    height: 100vh;
+	width: 100%;
+}
+
+.WhoIsWhoAwardsSampleContainer {
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.WhoIsWhoAwardsSampleContainer img {
+	position: relative;
+	width: 100vw;
+    height: 100vh;
+}
+
+.WhoIsWhoAwardsSampleImageDiv {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+
+.WhoIsWhoAwardsSampleImage {
+    display: block;
+	margin: auto;
+}
+
+
+
+.view-case-study-wiw.projects-load-wiw {
+	right: 60px;
+	-webkit-transition: 0.5s all cubic-bezier(.87, -.41, .19, 1.44), 1.5s right cubic-bezier(.87, -.41, .19, 1.44) 0.15s;
+	transition: 0.5s all cubic-bezier(.87, -.41, .19, 1.44), 1.5s right cubic-bezier(.87, -.41, .19, 1.44) 0.15s;
+}
+
+.view-case-study-wiw {
+	background: rgba(255, 255, 255, 0.35);
+	border-radius: 100px;
+    
+	position: fixed;
+    margin-top: 85vh;
+	border: 0;
+	width: 65px;
+	height: 65px;
+    left: 85vw;
+    /* top: 50%; */
+	/* bottom: 60px;
+	right: -100px; */
+	cursor: pointer;
+	z-index: 3;
+	overflow: hidden;
+}
+.view-case-study:before {
+	display: block;
+}
+
+.view-case-study-wiw {
+	z-index: 3;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+	background: rgba(255, 255, 255, 1);
+}
+
+.view-case-study-wiw:hover:after {
+	opacity: 0;
+	background: transparent;
+}
+
+.view-case-study-wiw>span:last-child {
+	margin: -1px 0 0;
+	-webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+	transform: rotate(-45deg) translate3d(0, 0, 0);
+}
+
+.view-case-study-wiw>span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 2px;
+	height: 8px;
+	margin: -6px 0 0;
+	background-color: #000000;
+	-webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
+	transform: rotate(45deg) translate3d(0, 0, 0);
+	-webkit-transition: height 0.5s cubic-bezier(.666, 0, .333, 1), margin 0.5s cubic-bezier(.666, 0, .333, 1);
+	transition: height 0.5s cubic-bezier(.666, 0, .333, 1), margin 0.5s cubic-bezier(.666, 0, .333, 1);
+}
+
+.view-case-study-wiw:hover>span,
+.work-mode .view-case-study-wiw>span {
+	background-color: #000000;
+}
+
+.view-case-study-wiw:hover,
+.view-case-study-wiw:hover {
+	background: rgba(255, 255, 255, 1);
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.view-case-study-wiw:hover {
+	-webkit-transform: scale(1.2) translate3d(0, 0, 0);
+	transform: scale(1.2) translate3d(0, 0, 0);
+}
+
+.work-mode .view-case-study-wiw>span {
+	-webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+	transform: rotate(45deg) translate3d(0, 0, 0);
+}
+
+.work-mode .view-case-study-wiw>span:last-child {
+	-webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
+	transform: rotate(-45deg) translate3d(0, 0, 0);
+}

@@ -1,0 +1,70 @@
+.collectionOfLogosSection {
+    /* left: 80px; */
+    background-image: url('../../assets/images/backgroundImages/wallpaper-01.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+	width: 100%;
+}
+
+.collectionOfLogosContainer {
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+    padding: 50px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+    background: rgba(255, 255, 255, 0.89);
+}
+
+.collectionOfLogos-text-background {
+    display: table-row;
+	position: absolute;
+	background-color: #fff;
+    padding-top: 14vh;
+	padding-left: 20vh;
+	padding-right: 20vh;
+	width: 100%;
+	height: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+}
+
+.collectionOfLogos-left-side{
+	width: 300px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.collectionOfLogos-right-side{
+	padding: 10px;
+	display: table-cell;
+	padding-right: 50px;
+}
+
+.collectionOfLogosLandingPage h1 {
+	font-size: 30px;
+	font-family: Rubik-medium;
+	font-weight: lighter;
+	letter-spacing: 0px;
+	color: #000;
+	line-height: 95%;
+}
+
+.collectionOfLogosLandingPage h4 {
+	font-family: Rubik-medium;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	line-height: 0px;
+	color: #000;
+}

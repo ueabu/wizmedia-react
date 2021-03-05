@@ -1,0 +1,49 @@
+.logoPageSection {
+    height: 100vh;
+	width: 100%;
+}
+
+.logoPageContainer {
+    display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+
+    padding: 50px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+    /* background: rgba(50, 50, 50); */
+}
+
+.logoPageContainer img{
+    position: relative;
+	width: 40%;
+}
+
+.logoPageImageAndTextDiv {
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.logoPageImage {
+    display: block;
+	margin: auto;
+}
+
+.logoPageTextPosition {
+    width: 50%;
+    text-align: center;
+	margin: auto;
+}
+
+.logoPageTextPosition p{
+    font-size: 23px;
+    /* color: white; */
+    font-family: DIN;
+}

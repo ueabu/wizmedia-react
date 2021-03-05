@@ -1,0 +1,46 @@
+@keyframes play120 {
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: -24000px 0px;
+	}
+}
+
+.Animation {
+  text-align: center;
+}
+
+.animation-preloader{
+  display: flex;
+	height: 100vh;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.shapeshifter {
+	animation-duration: 2000ms;
+	animation-timing-function: steps(120);
+	width: 200px;
+	height: 200px;
+	background-repeat: no-repeat;
+}
+
+.shapeshifter.play {
+	animation-name: play120;
+}
+
+.Animation-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
