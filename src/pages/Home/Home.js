@@ -89,7 +89,7 @@ class Home extends React.Component {
 
               <div className="typingContainer">
                 <h1>
-                  I am a progressive content manager & graphic designer
+                  I progressive content manager & graphic designer
                 </h1>
                 <section id="scrollid" className="scrollsectionclass">
                   <p>Scroll</p>

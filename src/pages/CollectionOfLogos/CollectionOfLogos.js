@@ -86,6 +86,12 @@ class CollectionOfLogos extends React.Component {
                     backgroundColor: '#ffe5b5',
                     textDescription: 'A real estate company focused on refurbishing old homes and selling them off.',
                     textColor: '#ffaf1c'
+                },
+                {
+                    imagesrc: 'Logo-14.png',
+                    backgroundColor: '#ffe5b5',
+                    textDescription: 'A real estate company old homes and selling them off.',
+                    textColor: '#ffaf1c'
                 }
             ]
         }
