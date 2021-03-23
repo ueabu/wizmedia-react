@@ -19,9 +19,7 @@ class App extends React.Component {
             <Route path="/logos" exact component={CollectionOfLogos} />
             <Route path="/whoiswho" exact component={WhoIsWhoAwards} />
             <Route path="/flyer" exact component={Flyers} />
-
-
-
+            
           </Switch>
         </Router>
       </main>)

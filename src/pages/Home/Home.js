@@ -87,7 +87,7 @@ class Home extends React.Component {
             <div className="container">
               <h4>Hi, I'm Wisdom Abu&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Please scroll down</h4>
 
-              <div className="typingContainer">
+              {/* <div className="typingContainer"> */}
                 <h1>
                   I am a progressive content manager & graphic designer
                 </h1>
@@ -95,7 +95,7 @@ class Home extends React.Component {
                   <p>Scroll</p>
                   <a><span></span></a>
                 </section>
-              </div>
+              {/* </div> */}
             </div>
           </div>
 

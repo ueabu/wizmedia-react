@@ -113,7 +113,7 @@
 	background: rgba(255, 255, 255, 0.35);
 	border-radius: 100px;
     
-	position: fixed;
+	/* position: fixed; */
     margin-top: 85vh;
 	border: 0;
 	width: 65px;

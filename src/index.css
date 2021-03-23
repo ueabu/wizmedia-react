@@ -52,6 +52,18 @@ body,html  {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (max-width: 650px) {
+
+
+	body,html  {
+	    max-width: 100%;
+    overflow-x: hidden;
+	  }
+
+
+}
+/*  */
+
 * {
 	box-sizing: border-box;
 }
