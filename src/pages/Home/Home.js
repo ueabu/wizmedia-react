@@ -80,22 +80,23 @@ class Home extends React.Component {
   render() {
     return (
       <div id="container" ref={this.container} className="home">
-          {/* <AwesomeSlider> */}
-         <Nav />
+        {/* <AwesomeSlider> */}
+        <Nav />
         <section>
           <div id="hero">
             <div className="container">
               <h4>Hi, I'm Wisdom Abu&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Please scroll down</h4>
 
-              {/* <div className="typingContainer"> */}
+              <div className="typingContainer">
                 <h1>
                   I progressive content manager & graphic designer
                 </h1>
-                <section id="scrollid" className="scrollsectionclass">
-                  <p>Scroll</p>
-                  <a><span></span></a>
-                </section>
-              {/* </div> */}
+              </div>
+              <section id="scrollid" className="scrollsectionclass">
+                <p>Scroll</p>
+                <a><span></span></a>
+              </section>
+
             </div>
           </div>
 
@@ -122,7 +123,7 @@ class Home extends React.Component {
         <ProjectType color='#0000ff' opacity='0.8' backgroundImage={collectionOfLogos}/>
         <ProjectType color='#9370db' opacity='0.4' backgroundImage={whoiswhoawards}/> */}
 
-{/* </AwesomeSlider> */}
+        {/* </AwesomeSlider> */}
       </div>
     );
   }

@@ -47,3 +47,25 @@
     /* color: white; */
     font-family: DIN;
 }
+
+
+@media (max-width: 650px) {
+	.logoPageContainer img{
+		position: relative;
+	
+		
+		width: 100%;
+		margin-top: 25%;
+	}
+
+	.logoPageTextPosition {
+		width: 100%;
+		text-align: center;
+		margin: auto 0;
+	}
+	
+	.logoPageTextPosition p{
+		font-size: 20px;
+	}
+
+}

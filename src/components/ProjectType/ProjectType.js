@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectType.css'
-import { createBrowserHistory as history} from 'history';
+import { createBrowserHistory as history } from 'history';
 
 
 class ProjectType extends React.Component {
@@ -8,9 +8,9 @@ class ProjectType extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            imageLogo: ''
+            imageLogo: '',
+            backgroundImageZoom: window.innerWidth < 650 ? '400%': '100%'
         }
-        // console.log(this.props)
     }
 
     componentDidMount() {
@@ -31,10 +31,24 @@ class ProjectType extends React.Component {
         // window.open('/logos')
         console.log('clicked')
         window.location.href = this.props.to;
+    }
 
+    windowZoomUpdate = () => {
+        if (window.innerWidth < 650) {
+            this.setState({
+                backgroundImageZoom: '400%'
+
+            })
+        } else {
+            this.setState({
+                backgroundImageZoom: '100%'
+
+            })
+        }
     }
 
     render() {
+        window.addEventListener("resize", this.windowZoomUpdate);
         return (
             // `url(${animationsvg})`
             <div>
@@ -45,7 +59,8 @@ class ProjectType extends React.Component {
                 <section className="projectSection"
                     style={{
                         backgroundImage: `url(${this.state.imageLogo})`,
-                        backgroundSize: '100%',
+                        backgroundSize: `${this.state.backgroundImageZoom}`,
+                        // backgroundSize: '100%',
                         backgroundRepeat: 'no-repeat'
                     }}
                 >

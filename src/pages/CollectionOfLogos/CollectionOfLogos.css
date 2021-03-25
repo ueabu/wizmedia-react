@@ -16,12 +16,10 @@
 	-webkit-flex-flow: row wrap;
 	-ms-flex-flow: row wrap;
 	flex-flow: row wrap;
-
     padding: 50px;
 	width: 100%;
 	height: 100%;
 	position: relative;
-
     background: rgba(255, 255, 255, 0.89);
 }
 
@@ -67,4 +65,43 @@
 	letter-spacing: 0px;
 	line-height: 0px;
 	color: #000;
+}
+
+@media (max-width: 650px) {
+	.collectionOfLogosSection {
+		background-image: url('../../assets/images/backgroundImages/wallpaper-01.png');
+		background-size: 250%;
+		background-repeat: no-repeat;
+		/* background-position: right; */
+		/* height: 100vh;
+		width: 100%; */
+	}
+
+	.collectionOfLogos-text-background { 
+		display: block;
+		position: absolute;
+		background-color: #FFFFFF;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 5px;
+		padding-bottom: 15px;
+		line-height: 20px;
+		width: 100%;
+	}
+
+	.collectionOfLogos-left-side{
+		width: 300px;
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+		line-height: 20px;
+	}
+	
+	.collectionOfLogos-right-side{
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+
 }
