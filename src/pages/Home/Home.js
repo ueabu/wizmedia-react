@@ -47,6 +47,16 @@ class Home extends React.Component {
           title: 'Who Is Who Awards',
           to: '/whoiswho'
         },
+        {
+          image: 'images/work-1/project01-background.png',
+          color: 'rgba(147,112,219, 0.4)',
+          textcolor: '#ffffff',
+          opacity: '0.8',
+          id: '02',
+          type: 'BRANDING',
+          title: 'Collection Of Flyers',
+          to: '/flyers'
+        },
       ]
     }
   }
