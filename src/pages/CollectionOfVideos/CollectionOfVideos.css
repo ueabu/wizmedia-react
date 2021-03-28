@@ -1,4 +1,4 @@
-.CollectionOfFlyersSection {
+.collectionOfVideosSection {
     /* left: 80px; */
     background-image: url('../../assets/images/backgroundImages/wallpaper-01.png');
     background-size: 100%;
@@ -8,7 +8,7 @@
 	width: 100%;
 }
 
-.CollectionOfFlyersContainer {
+.collectionOfVideosContainer {
     display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -23,7 +23,7 @@
     background: rgba(255, 255, 255, 0.89);
 }
 
-.CollectionOfFlyers-text-background {
+.collectionOfVideos-text-background {
     display: table-row;
 	position: absolute;
 	background-color: #fff;
@@ -37,19 +37,19 @@
 	bottom: 0px;
 }
 
-.CollectionOfFlyers-left-side{
+.collectionOfVideos-left-side{
 	width: 300px;
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.CollectionOfFlyers-right-side{
+.collectionOfVideos-right-side{
 	padding: 10px;
 	display: table-cell;
 	padding-right: 50px;
 }
 
-.CollectionOfFlyersLandingPage h1 {
+.collectionOfVideosLandingPage h1 {
 	font-size: 30px;
 	font-family: Rubik-medium;
 	font-weight: lighter;
@@ -58,7 +58,7 @@
 	line-height: 95%;
 }
 
-.CollectionOfFlyersLandingPage h4 {
+.collectionOfVideosLandingPage h4 {
 	font-family: Rubik-medium;
 	font-size: 15px;
 	text-transform: uppercase;
@@ -67,18 +67,8 @@
 	color: #000;
 }
 
-.CollectionOfFlyersSwiper {
-	position: 'relative';
-	/* left: '40px'; */
-	width: '70%';
-	margin:'auto';
-	align-content: 'center';
-}
-
-
-
 @media (max-width: 650px) {
-	.CollectionOfFlyersSection {
+	.collectionOfVideosSection {
 		background-image: url('../../assets/images/backgroundImages/wallpaper-01.png');
 		background-size: 250%;
 		background-repeat: no-repeat;
@@ -87,7 +77,7 @@
 		width: 100%; */
 	}
 
-	.CollectionOfFlyers-text-background { 
+	.collectionOfVideos-text-background { 
 		display: block;
 		position: absolute;
 		background-color: #FFFFFF;
@@ -99,7 +89,7 @@
 		width: 100%;
 	}
 
-	.CollectionOfFlyers-left-side{
+	.collectionOfVideos-left-side{
 		width: 300px;
 		display: block;
 		padding-left: 10px;
@@ -107,7 +97,7 @@
 		line-height: 20px;
 	}
 	
-	.CollectionOfFlyers-right-side{
+	.collectionOfVideos-right-side{
 		display: block;
 		padding-left: 10px;
 		padding-right: 10px;

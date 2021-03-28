@@ -8,7 +8,9 @@ import ScrollSnap from "scroll-snap";
 import './Home.css';
 // import TypeIt from "typeit-react";
 // import TypeIt from 'typeit';
-import AwesomeSlider from 'react-awesome-slider';
+// import AwesomeSlider from 'react-awesome-slider';
+// import ScrollSnap from 'scroll-snap'
+
 import 'react-awesome-slider/dist/styles.css';
 
 function callback() {
@@ -57,6 +59,16 @@ class Home extends React.Component {
           title: 'Collection Of Flyers',
           to: '/flyers'
         },
+        {
+          image: 'images/work-1/project01-background.png',
+          color: 'rgba(147,112,219, 0.4)',
+          textcolor: '#ffffff',
+          opacity: '0.8',
+          id: '02',
+          type: 'BRANDING',
+          title: 'Collection Of Videos',
+          to: '/videos'
+        },
       ]
     }
   }
@@ -69,7 +81,7 @@ class Home extends React.Component {
     console.log('I have been called')
     const element = this.container.current;
     const snapElement = new ScrollSnap(element, {
-      snapDestinationY: "90%",
+      snapDestinationY: "0% 90%",
       timeOut: '0',
       threshold: 0.2,
       duration: 300,
@@ -89,10 +101,10 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div id="container" ref={this.container} className="home">
+      <div  className="home">
         {/* <AwesomeSlider> */}
         <Nav />
-        <section>
+        <section id="container" ref={this.container}>
           <div id="hero">
             <div className="container">
               <h4>Hi, I'm Wisdom Abu&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Please scroll down</h4>
