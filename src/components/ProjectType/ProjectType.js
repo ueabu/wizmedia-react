@@ -56,7 +56,7 @@ class ProjectType extends React.Component {
                     <span></span>
                     <span></span>
                 </div>
-                <section className="projectSection"
+                <section className="projectSection" id={this.props.name}
                     style={{
                         backgroundImage: `url(${this.state.imageLogo})`,
                         backgroundSize: `${this.state.backgroundImageZoom}`,

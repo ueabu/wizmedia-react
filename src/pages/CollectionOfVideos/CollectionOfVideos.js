@@ -113,11 +113,12 @@ class collectionOfVideos extends React.Component {
     }
 
     goback = () => {
-        window.history.back()
+        window.location.href = "/home#videos"
+
+        // window.history.back()
     }
 
     _renderVideo = (item) => {
-        console.log(item.embedUrl)
         return (
           <div>
                 <div className='video-wrapper'>
@@ -125,7 +126,7 @@ class collectionOfVideos extends React.Component {
                 </div>
           </div>
         );
-      }
+    }
 
 
     render() {

@@ -13,6 +13,7 @@
     "react-responsive-carousel": "^3.2.15",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
+    "react-scroll": "^1.8.2",
     "sass": "^1.32.8",
     "scroll-snap": "^3.2.3",
     "swiper": "^6.5.0",

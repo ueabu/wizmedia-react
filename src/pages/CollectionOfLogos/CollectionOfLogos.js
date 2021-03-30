@@ -102,11 +102,13 @@ class CollectionOfLogos extends React.Component {
     }
 
     goback = () => {
-        window.history.back()
+        window.location.href = "/home#logos"
     }
 
 
     render() {
+        console.log(this.props)
+
         return (
             <div>
                 <div onClick={this.goback} id="viewProject-wiw" className={`view-case-study-wiw projects-load-wiw`}>
@@ -122,21 +124,22 @@ class CollectionOfLogos extends React.Component {
                                     <h4>CLIENT</h4>
                                     <p>
                                         Collection of Logos
-                                </p>
+                                    </p>
                                     <h4>PROJECT</h4>
                                     <p>
                                         Branding & Logo Design
-                                </p>
+                                    </p>
                                 </div>
                                 <div className="collectionOfLogos-right-side">
                                     <h4>DETAILS</h4>
-                                    <p>A collection of logos I've designed over the last few years. Each one of
-                                    these started off as an idea on a sketchpad or napkin, and
-                                    miraculously made its way to my computer. This is where they are brought to life
-                                    with illustrator's vector magic.<br></br> A great hand full
-                                    of the work below was revised and amended to properly fit the aesthetic
-                                    needs of the client.
-                                </p>
+                                    <p>
+                                        A collection of logos I've designed over the last few years. Each one of
+                                        these started off as an idea on a sketchpad or napkin, and
+                                        miraculously made its way to my computer. This is where they are brought to life
+                                        with illustrator's vector magic.<br></br> A great hand full
+                                        of the work below was revised and amended to properly fit the aesthetic
+                                        needs of the client.
+                                    </p>
                                 </div>
                             </div>
                         </div>

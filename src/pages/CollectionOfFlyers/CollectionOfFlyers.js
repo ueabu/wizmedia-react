@@ -116,7 +116,7 @@ class CollectionOfFlyers extends React.Component {
     }
 
     goback = () => {
-        window.history.back()
+        window.location.href = "/home#flyers"
     }
 
 

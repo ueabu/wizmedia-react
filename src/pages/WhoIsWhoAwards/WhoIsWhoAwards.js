@@ -13,7 +13,9 @@ class WhoIsWhoAwards extends React.Component {
 
 
     goback = () => {
-        window.history.back()
+        window.location.href = "/home#whoiswho"
+
+        // window.history.back()
     }
 
     render() {

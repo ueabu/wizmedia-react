@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createRef, useRef } from 'react'
 import Nav from '../../components/Nav/Nav'
 import Type from '../../components/Type/Type'
 import ProjectType from '../../components/ProjectType/ProjectType'
@@ -10,6 +10,7 @@ import './Home.css';
 // import TypeIt from 'typeit';
 // import AwesomeSlider from 'react-awesome-slider';
 // import ScrollSnap from 'scroll-snap'
+import { scroller } from "react-scroll";
 
 import 'react-awesome-slider/dist/styles.css';
 
@@ -23,10 +24,9 @@ class Home extends React.Component {
 
   container = React.createRef();
 
-
   constructor(props) {
     super(props)
-
+    // this.myRef = React.createRef() 
     this.state = {
       projects: [
         {
@@ -37,7 +37,8 @@ class Home extends React.Component {
           id: '01',
           type: 'BRANDING & LOGO DESIGN',
           title: 'Collection Of Logos',
-          to: '/logos'
+          to: '/logos',
+          name: 'logos'
         },
         {
           image: 'images/work-1/project01-background.png',
@@ -47,7 +48,8 @@ class Home extends React.Component {
           id: '02',
           type: 'BRANDING',
           title: 'Who Is Who Awards',
-          to: '/whoiswho'
+          to: '/whoiswho',
+          name: 'whoiswho'
         },
         {
           image: 'images/work-1/project01-background.png',
@@ -57,7 +59,8 @@ class Home extends React.Component {
           id: '02',
           type: 'BRANDING',
           title: 'Collection Of Flyers',
-          to: '/flyers'
+          to: '/flyers',
+          name: 'flyers'
         },
         {
           image: 'images/work-1/project01-background.png',
@@ -67,14 +70,21 @@ class Home extends React.Component {
           id: '02',
           type: 'BRANDING',
           title: 'Collection Of Videos',
-          to: '/videos'
+          to: '/videos',
+          name: 'videos'
         },
       ]
     }
   }
 
+  executeScroll = () => {
+    this.myRef.current.ScrollSnap()
+  }
+
   componentDidMount() {
-    this.bindScrollSnap();
+    // this.bindScrollSnap();
+    // this.scrollToSection()
+    // window.location.hash = "#test";
   }
 
   bindScrollSnap() {
@@ -97,21 +107,28 @@ class Home extends React.Component {
   //     waitUntilVisible: true
   //   }).go();
   // }
-
+  scrollToSection = () => {
+    console.log('called yeah')
+    scroller.scrollTo("projectSection", {
+      duration: 80,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
 
   render() {
     return (
       <div  className="home">
         {/* <AwesomeSlider> */}
         <Nav />
-        <section id="container" ref={this.container}>
+        <section ref={this.container}>
           <div id="hero">
             <div className="container">
               <h4>Hi, I'm Wisdom Abu&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Please scroll down</h4>
 
               <div className="typingContainer">
                 <h1>
-                  I progressive content manager & graphic designer
+                  I am a progressive content manager & graphic designer
                 </h1>
               </div>
               <section id="scrollid" className="scrollsectionclass">
@@ -127,6 +144,7 @@ class Home extends React.Component {
           this.state.projects.map((data) => {
             return (
               <ProjectType
+                ref={this.myRef}
                 key={data.image}
                 imgsrc={data.image}
                 color={data.color}
@@ -136,7 +154,7 @@ class Home extends React.Component {
                 title={data.title}
                 opacity={data.opacity}
                 to={data.to}
-
+                name={data.name}
               />
             );
           })
