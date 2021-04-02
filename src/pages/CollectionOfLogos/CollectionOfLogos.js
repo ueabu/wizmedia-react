@@ -2,6 +2,7 @@ import React from 'react';
 import './CollectionOfLogos.css'
 import LogoPage from '../../components/LogoPage/LogoPage'
 import Nav from '../../components/Nav/Nav'
+import { withRouter } from "react-router-dom";
 
 class CollectionOfLogos extends React.Component {
 
@@ -95,6 +96,7 @@ class CollectionOfLogos extends React.Component {
                 }
             ]
         }
+        // this.myRef = React.createRef()
     }
 
     importImage = (imagename) => {
@@ -102,7 +104,10 @@ class CollectionOfLogos extends React.Component {
     }
 
     goback = () => {
-        window.location.href = "/home#logos"
+        // console.log("tappeeeeedd")
+        // window.history.back()
+        this.props.history.push('/home')
+        // window.location.href = "/home"
     }
 
 
@@ -110,7 +115,7 @@ class CollectionOfLogos extends React.Component {
         console.log(this.props)
 
         return (
-            <div>
+            <div ref={this.props.ref} >
                 <div onClick={this.goback} id="viewProject-wiw" className={`view-case-study-wiw projects-load-wiw`}>
                     <span></span>
                     <span></span>
@@ -149,6 +154,7 @@ class CollectionOfLogos extends React.Component {
                     this.state.logosPageData.map((data) => {
                         return (
                             <LogoPage
+                                ref={this.myRef}
                                 key={data.imagesrc}
                                 imagesrc={data.imagesrc}
                                 backgroundColor={data.backgroundColor}
@@ -165,4 +171,4 @@ class CollectionOfLogos extends React.Component {
     }
 }
 
-export default CollectionOfLogos
+export default withRouter(CollectionOfLogos)

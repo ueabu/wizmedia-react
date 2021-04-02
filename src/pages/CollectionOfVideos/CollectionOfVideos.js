@@ -122,7 +122,7 @@ class collectionOfVideos extends React.Component {
         return (
           <div>
                 <div className='video-wrapper'>
-                    <iframe src={item.embedUrl} width="300" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+                    <iframe src={item.embedUrl} width="800" height="800" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
                 </div>
           </div>
         );

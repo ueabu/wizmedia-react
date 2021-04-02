@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProjectType.css'
 import { createBrowserHistory as history } from 'history';
+import { withRouter } from "react-router-dom";
 
 
 class ProjectType extends React.Component {
@@ -29,8 +30,9 @@ class ProjectType extends React.Component {
 
     goToSelectedProject = () => {
         // window.open('/logos')
-        console.log('clicked')
-        window.location.href = this.props.to;
+        // console.log('clicked')
+        this.props.history.push(this.props.to)
+        // window.location.href = this.props.to;
     }
 
     windowZoomUpdate = () => {
@@ -51,7 +53,7 @@ class ProjectType extends React.Component {
         window.addEventListener("resize", this.windowZoomUpdate);
         return (
             // `url(${animationsvg})`
-            <div>
+            <div id="tess">
                 <div onClick={this.goToSelectedProject} id="viewProject" className={`view-case-study projects-load`}>
                     <span></span>
                     <span></span>
@@ -99,4 +101,4 @@ class ProjectType extends React.Component {
     }
 }
 
-export default ProjectType
+export default withRouter(ProjectType)

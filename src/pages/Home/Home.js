@@ -10,23 +10,29 @@ import './Home.css';
 // import TypeIt from 'typeit';
 // import AwesomeSlider from 'react-awesome-slider';
 // import ScrollSnap from 'scroll-snap'
+import Typewriter from 'typewriter-effect';
 import { scroller } from "react-scroll";
-
 import 'react-awesome-slider/dist/styles.css';
+import { withRouter } from "react-router-dom";
 
-function callback() {
-  console.log("snapped");
-}
+// function callback() {
+//   console.log("snapped");
+// }
 
+// const utilizeScroll = () => {
+//   const elRef = React.createRef();
+//   const executeScroll = () => elRef.current.scrollIntoView();
 
+//   return { executeScroll, elRef };
+// };
 
 class Home extends React.Component {
 
-  container = React.createRef();
+  // container = React.createRef();
 
   constructor(props) {
     super(props)
-    // this.myRef = React.createRef() 
+    // this.elScroll = utilizeScroll();
     this.state = {
       projects: [
         {
@@ -57,7 +63,7 @@ class Home extends React.Component {
           textcolor: '#ffffff',
           opacity: '0.8',
           id: '02',
-          type: 'BRANDING',
+          type: 'DESIGN',
           title: 'Collection Of Flyers',
           to: '/flyers',
           name: 'flyers'
@@ -68,38 +74,50 @@ class Home extends React.Component {
           textcolor: '#ffffff',
           opacity: '0.8',
           id: '02',
-          type: 'BRANDING',
+          type: 'VIDEO',
           title: 'Collection Of Videos',
           to: '/videos',
           name: 'videos'
         },
       ]
     }
+
+    // this.myRef = React.createRef()
+    
   }
 
-  executeScroll = () => {
-    this.myRef.current.ScrollSnap()
-  }
+  // executeScroll = () => {
+  //   // this.myRef.scrollIntoView();
+  // }
 
   componentDidMount() {
+    // this.elScroll.executeScroll();
+    const section = document.querySelector('#tess');
+    // window.scroll({top: section.offsetTop, behavior: 'smooth'});
+
+    // section.scrollIntoView({inline: 'start'})
+    // console.log(section)
+    // console.log(this.myRef)
+    // window.scrollTo(0, this.myRef)
+    // this.executeScroll();
     // this.bindScrollSnap();
     // this.scrollToSection()
     // window.location.hash = "#test";
   }
 
-  bindScrollSnap() {
-    console.log('I have been called')
-    const element = this.container.current;
-    const snapElement = new ScrollSnap(element, {
-      snapDestinationY: "0% 90%",
-      timeOut: '0',
-      threshold: 0.2,
-      duration: 300,
-      snapStop: true
-    });
+  // bindScrollSnap() {
+  //   console.log('I have been called')
+  //   const element = this.container.current;
+  //   const snapElement = new ScrollSnap(element, {
+  //     snapDestinationY: "0% 90%",
+  //     timeOut: '0',
+  //     threshold: 0.2,
+  //     duration: 300,
+  //     snapStop: true
+  //   });
 
-    snapElement.bind(callback);
-  }
+  //   snapElement.bind(callback);
+  // }
 
   // typewriteToInput = (input) => {
   //   TypeIt('#input', {
@@ -118,7 +136,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div  className="home">
+      <div className="home" style={{left: '80px'}}>
         {/* <AwesomeSlider> */}
         <Nav />
         <section ref={this.container}>
@@ -127,8 +145,20 @@ class Home extends React.Component {
               <h4>Hi, I'm Wisdom Abu&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Please scroll down</h4>
 
               <div className="typingContainer">
+                
                 <h1>
-                  I am a progressive content manager & graphic designer
+                  I am a 
+                    <span>
+                    <Typewriter
+                    options={{
+                      strings: ["resourceful", "multifaceted", "passionate", "problem-solving", "progressive"],
+                      autoStart: true,
+                      loop: true,
+                      cursor: "_"
+                    }}
+                    />
+                    </span>
+                    content manager & graphic designer
                 </h1>
               </div>
               <section id="scrollid" className="scrollsectionclass">
@@ -144,7 +174,7 @@ class Home extends React.Component {
           this.state.projects.map((data) => {
             return (
               <ProjectType
-                ref={this.myRef}
+                // ref={this.elScroll.elRef}
                 key={data.image}
                 imgsrc={data.image}
                 color={data.color}
@@ -169,4 +199,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default withRouter(Home);

@@ -24,8 +24,6 @@ class App extends React.Component {
             <Route path="/flyers" exact component={CollectionOfFlyers} />
             <Route path="/whoiswho" exact component={WhoIsWhoAwards} />
             <Route path="/videos" exact component={CollectionOfVideos} />
-
-            
           </Switch>
         </Router>
       </main>)
