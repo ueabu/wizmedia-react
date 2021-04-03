@@ -5,7 +5,6 @@
 	/* width: 80vw; */
     background-size: 100%;
 	background-repeat: no-repeat;
-
 }
 
 .project-container {
@@ -162,6 +161,10 @@
 .work-mode .view-case-study>span:last-child {
 	-webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
 	transform: rotate(-45deg) translate3d(0, 0, 0);
+}
+
+.project_expanded {
+	display: none;
 }
 
 @media (max-width: 650px) {

@@ -33,7 +33,7 @@ const screenWidthPhone = 350
 
 
 
-class collectionOfVideos extends React.Component {
+class CollectionOfVideos extends React.Component {
 
     constructor(props) {
         super(props)
@@ -118,9 +118,20 @@ class collectionOfVideos extends React.Component {
     }
 
     goback = () => {
-        window.location.href = "/home#videos"
+        document.getElementsByClassName("homesection")[0].style.display = 'block';
+        document.getElementsByClassName("project_description")[0].style.display = 'block';
+        document.getElementsByClassName("project_description")[1].style.display = 'block';
+        document.getElementsByClassName("project_description")[2].style.display = 'block';
+        document.getElementsByClassName("project_description")[3].style.display = 'block';
 
-        // window.history.back()
+        document.getElementsByClassName("project_expanded")[0].style.display = 'none';
+        document.getElementsByClassName("project_expanded")[1].style.display = 'none';
+        document.getElementsByClassName("project_expanded")[2].style.display = 'none';
+        document.getElementsByClassName("project_expanded")[3].style.display = 'none';
+
+
+        const section = document.querySelector('#videos');
+        section.scrollIntoView()
     }
 
     _renderVideo = (item) => {
@@ -183,4 +194,4 @@ class collectionOfVideos extends React.Component {
     }
 }
 
-export default collectionOfVideos
+export default CollectionOfVideos

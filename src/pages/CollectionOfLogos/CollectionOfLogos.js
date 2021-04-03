@@ -104,18 +104,20 @@ class CollectionOfLogos extends React.Component {
     }
 
     goback = () => {
-        // console.log("tappeeeeedd")
-        // window.history.back()
-        this.props.history.push('/home')
-        // window.location.href = "/home"
+        document.getElementsByClassName("homesection")[0].style.display = 'block';
+        document.getElementsByClassName("project_description")[0].style.display = 'block';
+        document.getElementsByClassName("project_description")[1].style.display = 'block';
+        document.getElementsByClassName("project_expanded")[0].style.display = 'none';
+        document.getElementsByClassName("project_expanded")[1].style.display = 'none';
+
+        const section = document.querySelector('#logos');
+        section.scrollIntoView()
     }
 
 
     render() {
-        console.log(this.props)
-
         return (
-            <div id="logos" ref={this.props.ref} >
+            <div className="logos" >
                 <div onClick={this.goback} id="viewProject-wiw" className={`view-case-study-wiw projects-load-wiw`}>
                     <span></span>
                     <span></span>
@@ -160,7 +162,6 @@ class CollectionOfLogos extends React.Component {
                                 backgroundColor={data.backgroundColor}
                                 textDescription={data.textDescription}
                                 textColor={data.textColor}
-
                             />
                         );
                     })

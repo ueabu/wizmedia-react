@@ -46,44 +46,44 @@ class Home extends React.Component {
           to: '/logos',
           name: 'logos'
         },
-        // {
-        //   image: 'images/work-1/project01-background.png',
-        //   color: 'rgba(147,112,219, 0.4)',
-        //   textcolor: '#ffffff',
-        //   opacity: '0.8',
-        //   id: '02',
-        //   type: 'BRANDING',
-        //   title: 'Who Is Who Awards',
-        //   to: '/whoiswho',
-        //   name: 'whoiswho'
-        // },
-        // {
-        //   image: 'images/work-1/project01-background.png',
-        //   color: 'rgba(147,112,219, 0.4)',
-        //   textcolor: '#ffffff',
-        //   opacity: '0.8',
-        //   id: '02',
-        //   type: 'DESIGN',
-        //   title: 'Collection Of Flyers',
-        //   to: '/flyers',
-        //   name: 'flyers'
-        // },
-        // {
-        //   image: 'images/work-1/project01-background.png',
-        //   color: 'rgba(147,112,219, 0.4)',
-        //   textcolor: '#ffffff',
-        //   opacity: '0.8',
-        //   id: '02',
-        //   type: 'VIDEO',
-        //   title: 'Collection Of Videos',
-        //   to: '/videos',
-        //   name: 'videos'
-        // },
+        {
+          image: 'images/work-1/project01-background.png',
+          color: 'rgba(147,112,219, 0.4)',
+          textcolor: '#ffffff',
+          opacity: '0.8',
+          id: '02',
+          type: 'BRANDING',
+          title: 'Who Is Who Awards',
+          to: '/whoiswho',
+          name: 'whoiswho'
+        },
+        {
+          image: 'images/work-1/project01-background.png',
+          color: 'rgba(147,112,219, 0.4)',
+          textcolor: '#ffffff',
+          opacity: '0.8',
+          id: '02',
+          type: 'DESIGN',
+          title: 'Collection Of Flyers',
+          to: '/flyers',
+          name: 'flyers'
+        },
+        {
+          image: 'images/work-1/project01-background.png',
+          color: 'rgba(147,112,219, 0.4)',
+          textcolor: '#ffffff',
+          opacity: '0.8',
+          id: '02',
+          type: 'VIDEO',
+          title: 'Collection Of Videos',
+          to: '/videos',
+          name: 'videos'
+        },
       ]
     }
 
     // this.myRef = React.createRef()
-    
+
   }
 
   // executeScroll = () => {
@@ -92,10 +92,10 @@ class Home extends React.Component {
 
   componentDidMount() {
     // this.elScroll.executeScroll();
-    console.log(this.props)
-    const section = document.querySelector('#logos');
+    // console.log(this.props)
+    // const section = document.querySelector('#logos');
 
-    section.scrollIntoView({inline: 'start', behavior: 'smooth'})
+    // section.scrollIntoView({inline: 'start', behavior: 'smooth'})
     // console.log(section)
     // console.log(this.myRef)
     // window.scrollTo(0, this.myRef)
@@ -139,61 +139,60 @@ class Home extends React.Component {
       <div className="home">
         {/* <AwesomeSlider> */}
         <Nav />
-        <section ref={this.container} >
-          <div id="hero">
-            <div className="container">
-              <h4>Hi, I'm Wisdom Abu&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Please scroll down</h4>
+        <div>
+          <section className="homesection" ref={this.container} >
+            <div id="hero">
+              <div className="container">
+                <h4>Hi, I'm Wisdom Abu&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Please scroll down</h4>
 
-              <div className="typingContainer">
-                
-                <h1>
-                  I am a 
+                <div className="typingContainer">
+
+                  <h1>
+                    I am a
                     <span>
-                    <Typewriter
-                    options={{
-                      strings: ["resourceful", "multifaceted", "passionate", "problem-solving", "progressive"],
-                      autoStart: true,
-                      loop: true,
-                      cursor: "_"
-                    }}
-                    />
+                      <Typewriter
+                        options={{
+                          strings: ["resourceful", "multifaceted", "passionate", "problem-solving", "progressive"],
+                          autoStart: true,
+                          loop: true,
+                          cursor: "_"
+                        }}
+                      />
                     </span>
                     content manager & graphic designer
                 </h1>
+                </div>
+                <section id="scrollid" className="scrollsectionclass">
+                  <p>Scroll</p>
+                  <a><span></span></a>
+                </section>
+
               </div>
-              <section id="scrollid" className="scrollsectionclass">
-                <p>Scroll</p>
-                <a><span></span></a>
-              </section>
-
             </div>
-          </div>
 
-        </section>
-        {
-          this.state.projects.map((data) => {
-            return (
-              <ProjectType
-                // ref={this.elScroll.elRef}
-                key={data.image}
-                imgsrc={data.image}
-                color={data.color}
-                id={data.id}
-                type={data.type}
-                textcolor={data.textcolor}
-                title={data.title}
-                opacity={data.opacity}
-                to={data.to}
-                name={data.name}
-              />
-            );
-          })
-        }
-        {/* <ProjectType color='#fce906' opacity='0.8' backgroundImage={collectionOfLogos}/>
-        <ProjectType color='#0000ff' opacity='0.8' backgroundImage={collectionOfLogos}/>
-        <ProjectType color='#9370db' opacity='0.4' backgroundImage={whoiswhoawards}/> */}
+          </section>
 
-        {/* </AwesomeSlider> */}
+
+          {
+            this.state.projects.map((data) => {
+              return (
+                <ProjectType
+                  // ref={this.elScroll.elRef}
+                  key={data.image}
+                  imgsrc={data.image}
+                  color={data.color}
+                  id={data.id}
+                  type={data.type}
+                  textcolor={data.textcolor}
+                  title={data.title}
+                  opacity={data.opacity}
+                  to={data.to}
+                  name={data.name}
+                />
+              );
+            })
+          }
+        </div>
       </div>
     );
   }

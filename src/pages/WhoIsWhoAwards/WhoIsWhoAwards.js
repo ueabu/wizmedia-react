@@ -13,10 +13,21 @@ class WhoIsWhoAwards extends React.Component {
 
 
     goback = () => {
-        // window.location.href = "/home"
+        document.getElementsByClassName("homesection")[0].style.display = 'block';
+        document.getElementsByClassName("project_description")[0].style.display = 'block';
+        document.getElementsByClassName("project_description")[1].style.display = 'block';
 
-        window.history.back()
+        document.getElementsByClassName("project_expanded")[0].style.display = 'none';
+        document.getElementsByClassName("project_expanded")[1].style.display = 'none';
+
+        const section = document.querySelector('#whoiswho');
+        section.scrollIntoView()
+        // window.history.back()
     }
+
+    // componentDidMount(){
+
+    // }
 
     render() {
         return (
