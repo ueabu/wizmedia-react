@@ -115,7 +115,7 @@ class CollectionOfLogos extends React.Component {
         console.log(this.props)
 
         return (
-            <div ref={this.props.ref} >
+            <div id="logos" ref={this.props.ref} >
                 <div onClick={this.goback} id="viewProject-wiw" className={`view-case-study-wiw projects-load-wiw`}>
                     <span></span>
                     <span></span>

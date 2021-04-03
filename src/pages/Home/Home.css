@@ -1,14 +1,17 @@
 .home {
 
-	left: 80px;
+	/* left: 80px; */
 	position: relative;
 	overflow-y: scroll;
-	/* overflow: hidden; */
+	overflow-x: hidden;
 	height: 100vh;
 	scroll-snap-type: y mandatory;
 }
 
 section {
+	left: 80px;
+	position: relative;
+	display: block;
 	height: 100vh;
 	/* width: 100%; */
 	scroll-snap-align: center;

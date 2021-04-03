@@ -56,46 +56,46 @@ class WhoIsWhoAwards extends React.Component {
                     </div>
                 </section>
                 <section className="WhoIsWhoAwardsSectionSample">
-                    <div className="WhoIsWhoAwardsSampleContainer">
-                        <div className="WhoIsWhoAwardsSampleImageDiv">
+                    {/* <div className="WhoIsWhoAwardsSampleContainer"> */}
+                        {/* <div className="WhoIsWhoAwardsSampleImageDiv"> */}
                             <img src={whoiswhoImage} className="WhoIsWhoAwardsSampleImage"></img>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </section>
                 <section className="WhoIsWhoAwardsSectionSample">
-                    <div className="WhoIsWhoAwardsSampleContainer">
-                        <div className="WhoIsWhoAwardsSampleImageDiv">
+                    {/* <div className="WhoIsWhoAwardsSampleContainer"> */}
+                        {/* <div className="WhoIsWhoAwardsSampleImageDiv"> */}
                             <img src={whoiswhoImage2} className="WhoIsWhoAwardsSampleImage"></img>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </section>
                 <section className="WhoIsWhoAwardsSectionSample">
-                    <div className="WhoIsWhoAwardsSampleContainer">
-                        <div className="WhoIsWhoAwardsSampleImageDiv">
+                    {/* <div className="WhoIsWhoAwardsSampleContainer"> */}
+                        {/* <div className="WhoIsWhoAwardsSampleImageDiv"> */}
                             <img src={whoiswhoImage3} className="WhoIsWhoAwardsSampleImage"></img>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </section>
                 <section className="WhoIsWhoAwardsSectionSample">
-                    <div className="WhoIsWhoAwardsSampleContainer">
-                        <div className="WhoIsWhoAwardsSampleImageDiv">
+                    {/* <div className="WhoIsWhoAwardsSampleContainer"> */}
+                        {/* <div className="WhoIsWhoAwardsSampleImageDiv"> */}
                             <img src={whoiswhoImage4} className="WhoIsWhoAwardsSampleImage"></img>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </section>
                 <section className="WhoIsWhoAwardsSectionSample">
-                    <div className="WhoIsWhoAwardsSampleContainer">
-                        <div className="WhoIsWhoAwardsSampleImageDiv">
+                    {/* <div className="WhoIsWhoAwardsSampleContainer"> */}
+                        {/* <div className="WhoIsWhoAwardsSampleImageDiv"> */}
                             <img src={whoiswhoImage5} className="WhoIsWhoAwardsSampleImage"></img>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </section>
                 <section className="WhoIsWhoAwardsSectionSample">
-                    <div className="WhoIsWhoAwardsSampleContainer">
-                        <div className="WhoIsWhoAwardsSampleImageDiv">
+                    {/* <div className="WhoIsWhoAwardsSampleContainer"> */}
+                        {/* <div className="WhoIsWhoAwardsSampleImageDiv"> */}
                             <img src={whoiswhoImage6} className="WhoIsWhoAwardsSampleImage"></img>
-                        </div>
-                    </div>
+                        {/* </div> */}
+                    {/* </div> */}
                 </section>
             </div>
         );

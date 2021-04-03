@@ -53,7 +53,7 @@ class ProjectType extends React.Component {
         window.addEventListener("resize", this.windowZoomUpdate);
         return (
             // `url(${animationsvg})`
-            <div id="tess">
+            <div>
                 <div onClick={this.goToSelectedProject} id="viewProject" className={`view-case-study projects-load`}>
                     <span></span>
                     <span></span>

@@ -28,11 +28,16 @@ const phoneViewStyle = {
     alignContent: 'center'
 }
 
+const screenheightPhone = 400
+const screenWidthPhone = 350
+
+
+
 class collectionOfVideos extends React.Component {
 
     constructor(props) {
         super(props)
-       this.images = [
+       this.videos = [
             {
                 original: 'https://player.vimeo.com/video/504183545',
                 thumbnail: 'https://player.vimeo.com/video/504183545',
@@ -122,7 +127,7 @@ class collectionOfVideos extends React.Component {
         return (
           <div>
                 <div className='video-wrapper'>
-                    <iframe src={item.embedUrl} width="800" height="800" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+                    <iframe src={item.embedUrl} width={window.innerWidth < 650 ? screenWidthPhone : 800 } height={window.innerWidth < 650 ? screenheightPhone : 800 } frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
                 </div>
           </div>
         );
@@ -168,7 +173,7 @@ class collectionOfVideos extends React.Component {
 
                 <div style={window.innerWidth < 650 ? phoneViewStyle : fullPageStyle}>
                     <ImageGallery 
-                        items={this.images}
+                        items={this.videos}
                         showPlayButton={false}
                      />
                 </div>

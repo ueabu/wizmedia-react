@@ -11,6 +11,8 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
 
+import { HashLink } from 'react-router-hash-link';
+
 
 import flyer1 from '../../assets/images/flyers/flyer-1.png'
 import flyer2 from '../../assets/images/flyers/flyer-2.png'
@@ -141,6 +143,7 @@ class CollectionOfFlyers extends React.Component {
                                     <p>
                                         Branding & Flyer Design
                                 </p>
+                                
                                 </div>
                                 <div className="CollectionOfFlyers-right-side">
                                     <h4>DETAILS</h4>

@@ -1,7 +1,8 @@
 .projectSection {
     
-	left: 80px;
+	/* left: 80px; */
     height: 100vh;
+	/* width: 80vw; */
     background-size: 100%;
 	background-repeat: no-repeat;
 
