@@ -1,0 +1,2 @@
+(this["webpackJsonpwizmedia-react"]=this["webpackJsonpwizmedia-react"]||[]).push([[27],{125:function(a,e,i){"use strict";i.r(e),e.default=i.p+"static/media/wallpaper-01.4d7d6f14.png"}}]);
+//# sourceMappingURL=27.ba2ef731.chunk.js.map

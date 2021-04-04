@@ -1,0 +1,2 @@
+(this["webpackJsonpwizmedia-react"]=this["webpackJsonpwizmedia-react"]||[]).push([[1],{64:function(i,t,a){"use strict";a.r(t),t.default=a.p+"static/media/Logo-03.43349085.png"}}]);
+//# sourceMappingURL=1.2d5d8e40.chunk.js.map

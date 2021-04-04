@@ -1,0 +1,2 @@
+(this["webpackJsonpwizmedia-react"]=this["webpackJsonpwizmedia-react"]||[]).push([[22],{120:function(t,i,a){"use strict";a.r(i),i.default=a.p+"static/media/Rubik-Light.63f23a65.ttf"}}]);
+//# sourceMappingURL=22.fbf54e93.chunk.js.map
