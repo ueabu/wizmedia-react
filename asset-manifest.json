@@ -27,13 +27,13 @@
     "static/js/12.5cc2d8bb.chunk.js": "/wizmedia-react/static/js/12.5cc2d8bb.chunk.js",
     "static/js/12.5cc2d8bb.chunk.js.map": "/wizmedia-react/static/js/12.5cc2d8bb.chunk.js.map",
     "main.css": "/wizmedia-react/static/css/main.6cb0691a.chunk.css",
-    "main.js": "/wizmedia-react/static/js/main.5b7f2bd8.chunk.js",
-    "main.js.map": "/wizmedia-react/static/js/main.5b7f2bd8.chunk.js.map",
+    "main.js": "/wizmedia-react/static/js/main.4ec67f04.chunk.js",
+    "main.js.map": "/wizmedia-react/static/js/main.4ec67f04.chunk.js.map",
     "runtime-main.js": "/wizmedia-react/static/js/runtime-main.82157b0e.js",
     "runtime-main.js.map": "/wizmedia-react/static/js/runtime-main.82157b0e.js.map",
     "static/css/15.e0559d95.chunk.css": "/wizmedia-react/static/css/15.e0559d95.chunk.css",
-    "static/js/15.71ad4b2a.chunk.js": "/wizmedia-react/static/js/15.71ad4b2a.chunk.js",
-    "static/js/15.71ad4b2a.chunk.js.map": "/wizmedia-react/static/js/15.71ad4b2a.chunk.js.map",
+    "static/js/15.5a49f4b7.chunk.js": "/wizmedia-react/static/js/15.5a49f4b7.chunk.js",
+    "static/js/15.5a49f4b7.chunk.js.map": "/wizmedia-react/static/js/15.5a49f4b7.chunk.js.map",
     "static/js/16.e2e61480.chunk.js": "/wizmedia-react/static/js/16.e2e61480.chunk.js",
     "static/js/16.e2e61480.chunk.js.map": "/wizmedia-react/static/js/16.e2e61480.chunk.js.map",
     "static/js/17.02ac3595.chunk.js": "/wizmedia-react/static/js/17.02ac3595.chunk.js",
@@ -71,7 +71,7 @@
     "index.html": "/wizmedia-react/index.html",
     "static/css/15.e0559d95.chunk.css.map": "/wizmedia-react/static/css/15.e0559d95.chunk.css.map",
     "static/css/main.6cb0691a.chunk.css.map": "/wizmedia-react/static/css/main.6cb0691a.chunk.css.map",
-    "static/js/15.71ad4b2a.chunk.js.LICENSE.txt": "/wizmedia-react/static/js/15.71ad4b2a.chunk.js.LICENSE.txt",
+    "static/js/15.5a49f4b7.chunk.js.LICENSE.txt": "/wizmedia-react/static/js/15.5a49f4b7.chunk.js.LICENSE.txt",
     "static/media/FF-DIN-Round-Pro-Bold.OTF": "/wizmedia-react/static/media/FF-DIN-Round-Pro-Bold.11da894d.OTF",
     "static/media/FF-DIN-Round-Pro-Light.OTF": "/wizmedia-react/static/media/FF-DIN-Round-Pro-Light.b739263a.OTF",
     "static/media/FF-DIN-Round-Pro-Regular.otf": "/wizmedia-react/static/media/FF-DIN-Round-Pro-Regular.2b75fe9c.otf",
@@ -126,8 +126,8 @@
   "entrypoints": [
     "static/js/runtime-main.82157b0e.js",
     "static/css/15.e0559d95.chunk.css",
-    "static/js/15.71ad4b2a.chunk.js",
+    "static/js/15.5a49f4b7.chunk.js",
     "static/css/main.6cb0691a.chunk.css",
-    "static/js/main.5b7f2bd8.chunk.js"
+    "static/js/main.4ec67f04.chunk.js"
   ]
 }
