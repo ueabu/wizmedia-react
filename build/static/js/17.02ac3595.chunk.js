@@ -1,0 +1,2 @@
+(this["webpackJsonpwizmedia-react"]=this["webpackJsonpwizmedia-react"]||[]).push([[17],{115:function(a,i,t){"use strict";t.r(i),i.default=t.p+"static/media/FF-DIN-Round-Pro-Bold.11da894d.OTF"}}]);
+//# sourceMappingURL=17.02ac3595.chunk.js.map
