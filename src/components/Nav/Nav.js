@@ -42,6 +42,7 @@ class Nav extends React.Component {
     //Adding underline id to a tab gives it ability to show the yellow line on hover, 
     //Removing the underlineid makes the yellow line permanent
     toggleNavMenu = () => {
+        
         if (this.state.menudisplay == 'none') {
             this.setState({
                 menudisplay: 'block',
@@ -52,13 +53,16 @@ class Nav extends React.Component {
                 contact_id: 'underline',
                 menu_click: 'click'
             })
+            document.getElementsByClassName("home")[0].style.left = '80px';
+
         } else {
             this.setState({
                 menudisplay: 'none',
                 nav_background: 'rgba(0, 0, 0, 0)',
                 menu_click: ''
-
             })
+            document.getElementsByClassName("home")[0].style.left = '0px';
+
         }
     }
 

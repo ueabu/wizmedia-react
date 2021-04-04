@@ -12,19 +12,21 @@ import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
 
 const fullPageStyle = {
-    position: 'relative', 
-    left: '40px', 
+    position: 'relative',
+    paddingTop: '15px',
+
+    left: '40px',
     width: '70%',
-    margin:'auto', 
+    margin: 'auto',
     alignContent: 'center'
 }
 
 const phoneViewStyle = {
-    position: 'relative', 
+    position: 'relative',
     paddingTop: '50%',
     height: '100vh',
-    width: '100%', 
-    margin:'auto', 
+    width: '100%',
+    margin: 'auto',
     alignContent: 'center'
 }
 
@@ -37,7 +39,7 @@ class CollectionOfVideos extends React.Component {
 
     constructor(props) {
         super(props)
-       this.videos = [
+        this.videos = [
             {
                 original: 'https://player.vimeo.com/video/504183545',
                 thumbnail: 'https://player.vimeo.com/video/504183545',
@@ -136,11 +138,11 @@ class CollectionOfVideos extends React.Component {
 
     _renderVideo = (item) => {
         return (
-          <div>
+            <div>
                 <div className='video-wrapper'>
-                    <iframe src={item.embedUrl} width={window.innerWidth < 650 ? screenWidthPhone : 800 } height={window.innerWidth < 650 ? screenheightPhone : 800 } frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+                    <iframe src={item.embedUrl} width={window.innerWidth < 650 ? screenWidthPhone : 800} height={window.innerWidth < 650 ? screenheightPhone : 800} frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
                 </div>
-          </div>
+            </div>
         );
     }
 
@@ -160,7 +162,7 @@ class CollectionOfVideos extends React.Component {
                                 <div className="collectionOfVideos-left-side">
                                     <h4>CLIENT</h4>
                                     <p>
-                                        Collection of Flyers
+                                        Collection of Videos
                                 </p>
                                     <h4>PROJECT</h4>
                                     <p>
@@ -181,13 +183,15 @@ class CollectionOfVideos extends React.Component {
                         </div>
                     </div>
                 </section>
+                <section>
+                    <div style={window.innerWidth < 650 ? phoneViewStyle : fullPageStyle}>
+                        <ImageGallery
+                            items={this.videos}
+                            showPlayButton={false}
+                        />
+                    </div>
+                </section>
 
-                <div style={window.innerWidth < 650 ? phoneViewStyle : fullPageStyle}>
-                    <ImageGallery 
-                        items={this.videos}
-                        showPlayButton={false}
-                     />
-                </div>
             </div>
 
         );

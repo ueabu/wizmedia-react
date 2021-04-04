@@ -89,19 +89,23 @@ const images = [
 ];
 
 const fullPageStyle = {
-    position: 'relative', 
-    left: '40px', 
+    position: 'relative',
+    paddingTop: '30px',
+
+    // left: '10px',
+    // left: '50%',
+    height: '100vh',
     width: '70%',
-    margin:'auto', 
+    margin: 'auto',
     alignContent: 'center'
 }
 
 const phoneViewStyle = {
-    position: 'relative', 
+    position: 'relative',
     paddingTop: '50%',
     height: '100vh',
-    width: '100%', 
-    margin:'auto', 
+    width: '100%',
+    margin: 'auto',
     alignContent: 'center'
 }
 
@@ -156,7 +160,7 @@ class CollectionOfFlyers extends React.Component {
                                     <p>
                                         Branding & Flyer Design
                                 </p>
-                                
+
                                 </div>
                                 <div className="CollectionOfFlyers-right-side">
                                     <h4>DETAILS</h4>
@@ -172,10 +176,11 @@ class CollectionOfFlyers extends React.Component {
                         </div>
                     </div>
                 </section>
-
-                <div style={window.innerWidth < 650 ? phoneViewStyle : fullPageStyle}>
-                    <ImageGallery items={images} />
-                </div>
+                <section style={{position: 'relative' }}>
+                    <div style={window.innerWidth < 650 ? phoneViewStyle : fullPageStyle}>
+                        <ImageGallery items={images} />
+                    </div>
+                </section>
             </div>
 
         );

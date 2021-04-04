@@ -33,6 +33,8 @@ class ProjectType extends React.Component {
 
     goToSelectedProject = () => {
 
+        // window.scrollTo(0,0);
+
         document.getElementsByClassName("homesection")[0].style.display = 'none';
         document.getElementsByClassName("project_description")[0].style.display = 'none';
         document.getElementsByClassName("project_description")[1].style.display = 'none';
@@ -54,6 +56,9 @@ class ProjectType extends React.Component {
         if(this.props.name == "videos"){
             document.getElementsByClassName("project_expanded")[3].style.display = 'block';
         }
+        
+        // console.log('yaaa')
+      
 
     }
 

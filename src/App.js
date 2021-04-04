@@ -9,7 +9,6 @@ import CollectionOfVideos from './pages/CollectionOfVideos/CollectionOfVideos'
 
 
 import Nav from './components/Nav/Nav'
-import Flyers from './pages/Flyers/Flyers'
 
 class App extends React.Component {
   render() {

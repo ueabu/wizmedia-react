@@ -107,8 +107,14 @@ class CollectionOfLogos extends React.Component {
         document.getElementsByClassName("homesection")[0].style.display = 'block';
         document.getElementsByClassName("project_description")[0].style.display = 'block';
         document.getElementsByClassName("project_description")[1].style.display = 'block';
+        document.getElementsByClassName("project_description")[2].style.display = 'block';
+        document.getElementsByClassName("project_description")[3].style.display = 'block';
+
+
         document.getElementsByClassName("project_expanded")[0].style.display = 'none';
         document.getElementsByClassName("project_expanded")[1].style.display = 'none';
+        document.getElementsByClassName("project_expanded")[2].style.display = 'none';
+        document.getElementsByClassName("project_expanded")[3].style.display = 'none';
 
         const section = document.querySelector('#logos');
         section.scrollIntoView()
